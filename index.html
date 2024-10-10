@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kalkulator Suhu </title>
+
+    <link rel="stylesheet" href="css/style.cc">
+</head>
+
+<body>
+    <h1>
+        Kalkulator Suhu
+    </h1>
+
+    <div class="container">
+        <p>
+            Masukkan suhu derajat Celcius (°C) ke kotak di bawah, lalu klik tombol Konversi untuk mengubahnya menjadi Fahrenheit (°F).
+        </p>
+
+        <label for="celsius"> Celcius (°C): </label><br>
+        <input type="number" id="celsius" placeholder="Masukkan suhu dalam °C"><br>
+
+        <button id="convertBtn"> Konversi </button>
+        <button id="resetBtn"> Reset </button>
+        <button id="reverseBtn"> Reverse </button><br><br>
+
+        <label for="fahrenheit"> Fahrenheit (°F): </label><br>
+        <div id="fahrenheit" class="output">
+            You have not yet converted anything
+        </div><br>
+
+        <div id="explanation" class="explanation" style="display: none;">
+            <strong> How to Calculate: </strong><br>
+            <span id="calculation">
+                
+            </span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
